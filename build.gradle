@@ -1,0 +1,27 @@
+
+apply plugin: 'java-library'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+   
+   // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.1.RELEASE'
+   
+   // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security
+compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.1.RELEASE'
+   
+   // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.47'
+
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools
+compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.1.RELEASE'
+	
+	// https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.1.RELEASE'
+	
+}
+
